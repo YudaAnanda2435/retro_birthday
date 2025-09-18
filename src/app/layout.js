@@ -1,8 +1,18 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import { AppProvider } from "@/app/AppContext";
+import { Press_Start_2P } from "next/font/google"; 
 import "./globals.css";
+import "@/css/style.css"; 
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+// 2. Definisikan font retro Anda di sini
+const pressStart2P = Press_Start_2P({
+  variable: "--font-press-start",
+  weight: "400", // Wajib definisikan weight untuk font ini
   subsets: ["latin"],
 });
 
@@ -18,11 +28,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning={true}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <AppProvider>{children}</AppProvider>
       </body>
     </html>
   );
