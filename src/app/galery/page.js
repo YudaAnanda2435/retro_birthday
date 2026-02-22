@@ -113,7 +113,7 @@ export default function GalleryPage() {
               }`}
             ></div>
             <div className="font-bold text-yellow-300 text-xs tracking-widest">
-              HEYTML PHOTOBOX
+              Effort.Dong PHOTOBOX
             </div>
             <div
               className={`w-3 h-3 rounded-full ${

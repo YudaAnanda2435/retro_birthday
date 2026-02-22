@@ -34,6 +34,12 @@ export default function TetrisPage() {
       {/* Konten Utama (Konsol Game Boy) */}
       <div className="relative z-10 w-full max-w-[320px] sm:max-w-md mx-auto">
         <div className="bg-gray-300 rounded-[30px] p-3 sm:p-5 pt-6 sm:pt-8 pb-12 sm:pb-16 shadow-xl border-4 border-gray-400">
+          <div className="flex items-center">
+            <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 rounded-full bg-red-500 mr-0.5 sm:mr-1"></div>
+            <span className="text-[6px] sm:text-[10px] text-gray-700 font-semibold">
+              Power
+            </span>
+          </div>
           {/* Layar Game */}
           <div className="bg-gray-800 rounded-lg p-2 sm:p-3 mb-4 sm:mb-8 mt-2 sm:mt-3">
             <div className="retro-screen bg-black rounded-lg p-2 sm:p-4 mb-1">

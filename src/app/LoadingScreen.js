@@ -56,7 +56,7 @@ export default function LoadingScreen({ onLoadingComplete }) {
       <div className="w-full max-w-md p-6">
         <div className="border-4 border-green-500 rounded-lg p-6 bg-black">
           <h2 className="text-green-400 text-xl mb-4 font-bold retro-text text-center">
-            HEYTML-BOY
+            Effort.Dong
           </h2>
           <div className="mb-4 font-mono text-green-400 flex items-center">
             <span className="mr-2">&gt;</span>
